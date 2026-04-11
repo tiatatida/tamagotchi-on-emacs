@@ -83,7 +83,7 @@ o'')}____//
       (insert "M-x tamagotchi - open start menu\nM-x tamastatus - to check your tamagotchi status\nM-x tamacare   - to care you tamagotchi :3\n")
       (insert "You can use hug, feed, clean, sleep")
       (insert "\n+_______________________________________________________________________________+\n")
-      (let ((save-path "~/.emacs.d/tamagotchi/save.el"))
+      (let ((save-path "~/.emacs.d/tamagotchi-on-emacs/save.el"))
         (if (file-exists-p save-path)	    
             (progn
               (load save-path)
@@ -105,7 +105,7 @@ o'')}____//
   (tama-start-decay)
   (tama-start-hatch-timer)
   (tama-draw)
-  (with-temp-file "~/.emacs.d/tamagotchi/save.el"
+  (with-temp-file "~/.emacs.d/tamagotchi-on-emacs/save.el"
     (insert (format "(setq alive-dead %S)\n" alive-dead))
     (insert (format "(setq tama-energy %d)\n" tama-energy))
     (insert (format "(setq tama-hunger %d)\n" tama-hunger))
@@ -113,7 +113,7 @@ o'')}____//
 
 (defun continue (_button)
   "Open save files using BUTTON."
-  (let ((save-file "~/.emacs.d/tamagotchi/save.el"))
+  (let ((save-file "~/.emacs.d/tamagotchi-on-emacs/save.el"))
     (if (file-exists-p save-file)
         (progn
           (load save-file)
@@ -187,10 +187,11 @@ o'')}____//
 
 (defun tamasave ()
   "Save."
-  (let ((save-dir "~/.emacs.d/tamagotchi/save.el"))
+  (let* ((save-dir "~/.emacs.d/tamagotchi-on-emacs/")
+	(save-file (concat save-dir "save.el")))
     (unless (file-exists-p save-dir)
       (make-directory save-dir t))
-    (with-temp-file (concat save-dir "save.el")
+    (with-temp-file save-file
       (insert (format "(setq alive-dead %S)\n" alive-dead))
       (insert (format "(setq tama-stage '%S)\n" tama-stage))
       (insert (format "(setq tama-pet-type '%S)\n" tama-pet-type))
@@ -201,7 +202,7 @@ o'')}____//
 (defun tamastatus ()
   "Check tamagotchi status."
   (interactive)
-  (let ((save-path "~/.emacs.d/tamagotchi/save.el"))
+  (let ((save-path "~/.emacs.d/tamagotchi-on-emacs/save.el"))
     (if (file-exists-p save-path)
         (progn
           (load save-path)
