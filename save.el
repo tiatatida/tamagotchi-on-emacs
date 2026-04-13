@@ -1,6 +1,0 @@
-(setq alive-dead t)
-(setq tama-stage 'pet)
-(setq tama-pet-type 'cat)
-(setq tama-hunger 4)
-(setq tama-happieness 0)
-(setq tama-energy 42)
