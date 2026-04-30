@@ -1,32 +1,39 @@
-#+TITLE: tamagotchi on emacs
+#+TITLE: tamaemacs
 #+AUTHOR: tada leledonde
 
 -----
 
-[[file:start-menu.png]]
+[[file:pictures/start-menu.png]]
 
 -----
 
 * How to install
 *Via source*
-  1. git clone https://github.com/tiatatida/tamagotchi-on-emacs.git
-  2. package-install-file RET tamagotchi.el
+  1. git clone https://github.com/tiatatida/tamaemacs-on-emacs.git
+  2. package-install-file RET tamaemacs.el
 *Via Melpa (not available yet ToT)*
-  1. package-install RET tamagotchi RET
+  1. package-install RET tamaemacs RET
 
 -----
      
 * How to play
-*M-x tamagotchi*
+*M-x tamaemacs*
   - start game menu
 *M-x tamacare*
-  - use this to feed, hug, clean, sleep your tamagotchi
-  -  *feed* increase your tamagotchi hunger
-  -  *hug* increase your tamagotchi happieness but decrease energy
-  -  *clean* increase your tamagotchi happieness but decrease energy
-  -  *sleep* increase your tamagotchi energy
+  - use this to feed, hug, clean, sleep your tamaemacs
+     [[file:pictures/feed.png]]
+  -  *feed* increase your tamaemacs hunger.
+  -  *hug* increase your tamaemacs happieness but decrease energy.
+  -  *clean* increase your tamaemacs happieness but decrease energy.
+  -  *sleep* increase your tamaemacs energy.
 *M-x tamastatus*
-  - use this to check your tamagotchi status
+  - use this to check your tamaeemacs status.
+*M-x tamacook
+  [[file:pictures/cook.png]]
+  - use this to cook food for your tamaemacs.
+*M-x tamafarm
+  [[file:pictures/farm.png]]
+  - plant and harvest crop for ingredients.
 
 -----
   
