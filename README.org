@@ -21,17 +21,17 @@
   - start game menu
 *M-x tamacare*
   - use this to feed, hug, clean, sleep your tamaemacs
-     [[file:pictures/feed.png]]
   -  *feed* increase your tamaemacs hunger.
+	[[file:pictures/feed.png]]
   -  *hug* increase your tamaemacs happieness but decrease energy.
   -  *clean* increase your tamaemacs happieness but decrease energy.
   -  *sleep* increase your tamaemacs energy.
 *M-x tamastatus*
   - use this to check your tamaeemacs status.
-*M-x tamacook
+*M-x tamacook*
   [[file:pictures/cook.png]]
   - use this to cook food for your tamaemacs.
-*M-x tamafarm
+*M-x tamafarm*
   [[file:pictures/farm.png]]
   - plant and harvest crop for ingredients.
 
