@@ -29,11 +29,11 @@
 *M-x tamastatus*
   - use this to check your tamaeemacs status.
 *M-x tamacook*
-  [[file:pictures/cook.png]]
   - use this to cook food for your tamaemacs.
-*M-x tamafarm*
-  [[file:pictures/farm.png]]
+	[[file:pictures/cook.png]]
+*M-x tamafarm* 
   - plant and harvest crop for ingredients.
+	[[file:pictures/farm.png]]
 
 -----
   
