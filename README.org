@@ -31,7 +31,7 @@
 *M-x tamacook*
   - use this to cook food for your tamaemacs.
 	[[file:pictures/cook.png]]
-*M-x tamafarm* 
+*M-x tamafarm*
   - plant and harvest crop for ingredients.
 	[[file:pictures/farm.png]]
 
